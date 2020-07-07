@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!---heading---->
+<title>COVID-19</title>
+<!---html, css, bootstrap---->
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> <!---text URL---->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<!---heading---->
+<div class="headery" id="topheader">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container" text-uppercase p-2">
+
+  <a class="navbar-brand font-weight-bold text-white" href="#">COVID-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-uppercase text-white ">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service/">Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/health/">Your health</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/status">Current Status</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact/">Contact</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div>
+    </nav>
+
+<!--************************* header parts end *************** -->
+
+<!--************************* MId Content Start *************** -->
+<br>
+<!--************************* MId Content end *************** -->
+
+<!--************************* prah start  *************** -->
+<!-- Indicates a successful or positive action -->
+
+<div class="container z-depth-1 my-5 py-5">
+
+    <!-- Section -->
+    <section>
+      
+      <style>
+        .border-top {
+          border-top-width: 2px !important;
+        }
+        </style>
+      <h3 class="font-weight-bold text-center dark-grey-text pb-2 text-muted  ">Your Health</h3>
+      <hr class="w-header my-4">
+     
+      
+      <p class="lead text-center text-muted pt-2 mb-5">The symptoms of infection for the new coronavirus are often similar to those of other respiratory virus infections, such as influenza. 
+          Symptoms can include fever, cough, or shortness of breath. </p>
+      <div class="row d-flex justify-content-center">
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4 p-3 mb-2 bg-info text-white text-center"> Symptoms and Treatment </h5>
+          <p class="text-muted mb-5 pb-md-3" href="#">Symptoms of COVID-19
+            Those who are infected with COVID-19 may have little to no symptoms. You may not know you have symptoms of COVID-19 because they are similar to a cold or flu.
+            
+            Symptoms have included:
+            cough,
+            fever,
+            difficulty breathing,
+            pneumonia in both lungs,
+            In severe cases, infection can lead to death.
+            
+            Symptoms may take up to 14 days to appear after exposure to COVID-19. <a href="#s1">More</a></p>
+        </div>
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4 p-3 mb-2 bg-info text-white text-center" >Prevention and Risks </h5>
+          <p class="text-muted mb-5 pb-md-3"> How coronavirus spreads
+            Human coronaviruses cause infections of the nose, throat and lungs. They are most commonly spread from an infected person through:
+            respiratory droplets generated when you cough or sneeze
+            close, prolonged personal contact, such as touching or shaking hands
+            touching something with the virus on it, then touching your mouth, nose or eyes before washing your hands
+            Current evidence suggests person-to-person spread is efficient when there is close contact. <a href="#s2">More</a></p>
+        </div>
+  
+        <div class="w-100"></div>
+  <hr>
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light p-3 mb-2 bg-success text-white ">Being Prepared </h5>
+          <p class="text-muted mb-5">COVID-19 is a serious health threat, and the situation is evolving daily. The risk will vary between and within communities. Some Germans are more at risk of developing severe complications from COVID-19 due to underlying medical conditions and age.
+            Given the increasing number of cases in Germany, the risk to Germans is considered high. This does not mean that all Germans will get the disease. It means that there is already a significant impact on our health care system.
+            If we do not flatten the epidemic curve now, the increase of COVID-19 cases could affect health care resources for Germans.
+            <a href="#s4">More</a></p>
+        </div>
+  
+        <div class="col-md-6 col-lg-5 col-xl-4">
+          <h5 class="font-weight-normal border-top border-light p-3 mb-2 bg-success text-white">For Health Professionals</h5>
+          <p class="text-muted mb-5">Health professionals in Germany have a critical role to play in identifying, reporting and managing potential cases of COVID-19.
+            Coronaviruses are a large family of viruses, some of which infect only animals, and others that can infect humans. Seven strains of coronavirus are now known to cause illness in humans.
+            The strain of coronavirus found in Wuhan is the most recent of 7 known strains. Of the 6 others, 4 cause only minor respiratory symptoms similar to those of a cold, and 2, severe acute respiratory syndrome (SARS CoV) and Middle East respiratory syndrome (MERS CoV), have been associated with more serious and life-threatening diseases.
+            <a href="#s3">More</a></p>
+        </div>
+  
+      </div>
+    </section>
+    <!-- Section -->
+  
+  </div>
+  
+<!--************************* prah end  *************** -->
+<hr>
+<!--************************* link with images  start*************** -->
+
+<!--************************* 1 start*************** -->
+<div class="container my-5 py-5 z-depth-1">
+    <a name="s1"></a>
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+            <a href="#Symptoms and Treatment"></a>
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img src="../static/images/yourhealth/7_Coronavirus.jpg" class="img-fluid alitop alt="">
+
+        </div>
+        <br>
+        <br>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h3 class="font-weight-bold" >Symptoms and Treatment</h3>
+          
+
+          <p class="text-muted">If you or your child become ill
+            If you are showing symptoms of COVID-19, reduce your contact with others:
+            
+            isolate yourself at home for 14 days to avoid spreading it to others
+            if you live with others, stay in a separate room or keep a 2-metre distance
+            visit a health care professional or call your local public health authority
+            call ahead to tell them your symptoms and follow their instructions
+            Children who have mild COVID-19 symptoms are able to stay at home with a caregiver throughout their recovery without needing hospitalization. If you are caring for a child who has suspected or probable COVID-19, it is important to follow the advice for caregivers. This advice will help you protect yourself, others in your home, as well as others in the community.</p>
+
+          <a class="font-weight-bold" href="https://www.youtube.com/watch?v=UCG3xqtcL3c" target="_blank" >Learn more<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+  </div>
+  <hr>
+<!--************************* 2 start*************** -->
+  <div class="container my-5 py-5 z-depth-1">
+    <a name="s2"></a>
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img src="../static/images/yourhealth/prevention-and-risk-covid-am800.png" class="img-fluid alitop alt="">
+
+        </div>
+        <br>
+        <br>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h3 class="font-weight-bold">Prevention and Risks</h3>
+
+          <p class="text-muted">Difference between quarantine (self-isolate) and isolate
+            There is a difference between advice to quarantine (self-isolate) and advice to isolate. These measures are in place to protect the health and safety of Canadians.
+            
+            Additional restrictions apply to travellers returning to Germany.
+            
+            Quarantine (self-isolate)
+            Quarantine for 14 days if you have no symptoms and any of the following apply:
+            
+            You must isolate if any of the following apply:
+            
+            you have been diagnosed with COVID-19, or are waiting to hear the results of a lab test for COVID-19
+            you have symptoms of COVID-19, even if mild
+            you have been in contact with a suspected, probable or confirmed case of COVID-19
+            you have been told by public health that you may have been exposed to COVID-19
+            you have returned from travel outside Germany with symptoms of COVID-19 (mandatory)
+</p>
+
+          <a class="font-weight-bold" href="https://www.youtube.com/watch?v=9Ay4u7OYOhA" target="_blank" >Learn more<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+  </div>
+
+<!--************************* 3 start*************** -->
+<div class="container my-5 py-5 z-depth-1">
+    <a name="s3"></a>
+ 
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img src="../static/images/yourhealth/Know-the-Facts.png" class="img-fluid alitop alt="">
+
+        </div>
+        <br>
+        <br>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h3 class="font-weight-bold">Being Prepared</h3>
+
+          <p class="text-muted">For individuals
+            Canadians should continue to think ahead about the actions that they can take to stay healthy and prevent the spread of any illness, especially respiratory infections.
+            
+            Now and always during cold and flu season, stay home if you are sick. Encourage those you know are sick to stay home until they no longer have symptoms.
+            
+            Since respiratory viruses, such as the one that causes COVID-19, are spread through contact, change how you greet one another. Instead of a handshake, a kiss or a hug, a friendly wave or elbow bump is less likely to expose you to respiratory viruses.</p>
+
+          <a class="font-weight-bold" href="https://www.youtube.com/watch?v=DqyFg-APe94" target="_blank" >Learn more<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+  </div>
+<!--************************* 4 start*************** -->
+<div class="container my-5 py-5 z-depth-1">
+
+    <a name="s4"></a>
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 dark-grey-text text-center text-lg-left">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
+
+          <img src="../static/images/yourhealth/7dd055c5-73de-40c6-b430-c902bc870fd3-corona_prepare-01.jpg" class="img-fluid alitop alt="">
+
+        </div>
+        <br>
+        <br>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+
+          <h3 class="font-weight-bold">For Health Professionals</h3>
+
+          <p class="text-muted">Transmission
+            Current epidemiologic information suggests that human-to-human transmission of COVID-19 can occur when an individual is in close contact with a symptomatic case. Human coronaviruses are most commonly spread from an infected person through: respiratory droplets; close, prolonged personal contact; and touching an infected area, then touching mouth, nose or eyes before washing hands.</p>
+
+          <a class="font-weight-bold" href="https://www.youtube.com/watch?v=qHJKVAMs2ho" target="_blank" >Learn more<i class="fas fa-angle-right ml-2"></i></a>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+  </div>
+  
+<!--************************* link with images  start*************** -->
+
+<!--************************* Footer Start *************** -->
+
+<footer class="footersection" id="footerdiv">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div>
+                <h3>About Corona Virus</h3>
+                <p> Most people who fall sick with COVID-19 will 
+                  experience mild to moderate symptoms and recover without special treatment.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 footer-div align-items-center">
+            <div>
+                <h3>NAVIGATION LINKS</h3>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/service/">Service</a></li>
+                <li><a href="/health/">Your Health</a></li>
+                <li><a href="/status/">Current Situation</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-12 footer-div">
+            <div>
+                <h3>Subscribe for Updates</h3>
+                <p> Get a roundup of the most important and intriguing stories, delivered to your inbox.</p>
+
+                  <div class="container newsletter-main">
+                      <div class="row">
+                        <div class="col-lg-12  col-12">
+                         
+                            <div class="input-group mb-3 form-group">
+                              <input type="text" class="form-control news-input" id="sub-email" name="sub-email" placeholder="Your Email" required> 
+                              <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0 input-group-text">Subscribe</span>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+              <div class="mt-5 text-center">
+                <p>Copyright @ 2020 All right reserved | MUHAMMAD ALI  </p>
+              </div>
+          <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+          </div>
+    </div>
+</footer>
+
+
+
+<!--************************* Footer End *************** -->
+
+
+
+
+<!--*************************JS *************** -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+
+  $('.count').counterUp({
+    delay: 10,
+    time: 3000
+  })
+  
+
+    /* //Get the Button */
+
+mybutton = document.getElementById("myBtn");
+
+//when the user scrolls down 20px from the top of the document, show the button
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+  if (Document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+//when the user click onthe button, scroll to the top of the document
+
+function topFunction()  {
+  document.body.scrollTop = 0; //for safari
+  document.documentElement.scrollTop = 0; // for chrome, firefox, IE and Opera
+}
+
+</script>
+</body>
+</html>
+

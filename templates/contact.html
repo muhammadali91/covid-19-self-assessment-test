@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!---heading---->
+<title>COVID-19</title>
+<!---html, css, bootstrap---->
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -conecting URL-- -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"> <!---text URL---->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<!---heading---->
+<div class="headers" id="topheader">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container" text-uppercase p-2">
+
+  <a class="navbar-brand font-weight-bold text-white" href="#">COVID-19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto text-uppercase text-white ">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service/">Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/health/">Your health</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/status">Current Status</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact/">Contact</a>
+      </li>
+    </ul>
+  </div>
+    </div>
+    </nav>
+
+
+<!--************************* header parts end *************** -->
+
+<!--************************* FAQ Start*************** -->
+<br>
+<br>
+<div class="container my-5">
+
+  <!--Section: Content-->
+  <section>
+
+    <h4 class="font-weight-normal text-uppercase font-small grey-text mb-4 text-center">FAQ</h4>
+    <!-- Section heading -->
+    <h3 class="font-weight-bold black-text mb-4 pb-2 text-center">Frequently Asked Questions</h3>
+    <hr class="w-header">
+    <!-- Section description -->
+    <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Got a question? We've got answers. If you have some other questions, see our support center.</p>
+
+		<div class="row">
+      <div class="col-md-12 col-lg-10 mx-auto mb-5">
+      
+        <!--Accordion wrapper-->
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+          <!-- Accordion card -->
+          <div class="card border-top border-bottom-0 border-left border-right border-light">
+
+            <!-- Card header -->
+            <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                aria-controls="collapseOne1">
+                <h5 class="black-text font-weight-normal mb-0">
+                  How well is Germany prepared? 
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+              data-parent="#accordionEx">
+              <div class="card-body">
+                Germany is as well prepared as it possibly can be. We have a network of centres of excellence and specialist clinics in Germany that is unmatched anywhere in the world. We have a very good disease warning and notification system, as well as excellent pandemic preparedness plans. 
+                The National Pandemic Preparedness Plan is the basis for pandemic planning in Germany. 
+                The plan was adopted in 2017 by the Federation and the federal states and is updated regularly. In addition, regular emergency training exercises are carried out at Germany’s airports. The Robert Koch Institute is responsible for coordination and information.
+              </div>
+            </div>
+
+          </div>
+          <!-- Accordion card -->
+
+          <!-- Accordion card -->
+          <div class="card border-bottom-0 border-left border-right border-light">
+
+            <!-- Card header -->
+            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                aria-expanded="false" aria-controls="collapseTwo2">
+                <h5 class="black-text font-weight-normal mb-0">
+                  What emergency plans are in place? 
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+              data-parent="#accordionEx">
+              <div class="card-body">
+              	The Federal Ministry of Health has a National Pandemic Preparedness Plan, drawn up with the Robert Koch Institute, one of its executive agencies. This is implemented by the federal states in their own pandemic preparedness plans.
+              </div>
+            </div>
+
+          </div>
+          <!-- Accordion card -->
+
+          <!-- Accordion card -->
+          <div class="card border-bottom-0 border-left border-right border-light">
+
+            <!-- Card header -->
+            <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                aria-expanded="false" aria-controls="collapseThree3">
+                <h5 class="black-text font-weight-normal mb-0">
+                  Does Germany have enough protective equipment? 
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+              data-parent="#accordionEx">
+              <div class="card-body">
+								The crisis task force has decided that there is an emergency situation in the procurement of protective medical equipment and in capacity in intensive care units. The Federal Ministry of Health procures such equipment centrally for medical practices, hospitals and federal authorities. The Procurement Office of the Federal Ministry of the Interior helps with large-scale purchases of disinfectant; the Federal Agency for Technical Relief is in charge of distributing protective clothing and equipment to the federal authorities.
+              </div>
+            </div>
+
+          </div>
+          <!-- Accordion card -->
+          
+          <!-- Accordion card -->
+          <div class="card border-left border-right border-light">
+
+            <!-- Card header -->
+            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree4"
+                aria-expanded="false" aria-controls="collapseThree4">
+                <h5 class="black-text font-weight-normal mb-0">
+                  Which Federal Government bodies are dealing with the coronavirus pandemic?  
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseThree4" class="collapse" role="tabpanel" aria-labelledby="headingThree4"
+              data-parent="#accordionEx">
+              <div class="card-body">
+								Within the division of responsibilities in Germany’s federal system, in case of a pandemic the Federation plays a coordinating role, promoting a unified approach to fighting the pandemic and running public information campaigns, as well as making recommendations to the federal states. 
+In addition to the regular Wednesday meetings of the Federal Cabinet, the Federal Chancellor also meets on Mondays with the federal ministers of finance, foreign affairs, health, defence and the interior, and on Thursdays with all federal ministers responsible for the specific areas to be discussed. These groups assess the current situation, identify the general thrust of actions within the federal sphere of responsibility and monitor processes critical to success during the crisis. 
+The joint crisis task force of the Federal Ministry of Health and the Federal Ministry of the Interior addresses operational issues and takes immediate action, for example implementing decisions made in the Federal Chancellor’s Monday and Thursday meetings, responding to requests from the federal states for assistance, and collecting and preparing data for situation reports. 
+In addition to the federal ministries of health and the interior, representatives of the Federal Chancellery, the Federal Foreign Office, the Federal Ministry of Defence, the Federal Ministry for Economic Affairs and Energy and the Federal Ministry of Labour and Social Affairs also work with the joint crisis task force. It currently meets twice weekly (Tuesdays and Thursdays).
+ In line with the plan drawn up for this type of situation, the crisis task force is headed jointly by the Federal Ministry of the Interior (State Secretary Hans-Georg Engelke) and the Federal Ministry of Health (State Secretary Dr Thomas Steffen).    
+              </div>
+            </div>
+
+          </div>
+          <!-- Accordion card -->
+
+        </div>
+        <!-- Accordion wrapper -->
+        
+      </div>
+    </div>
+
+	</section>
+  
+</div>
+
+
+<hr>
+<!--************************* FAQ end *************** -->
+
+<!--************************* Contact us Form start  *************** -->
+
+<div class="container my-5 py-5 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+    <style>
+      .map-container {
+        height: 200px;
+        position: relative;
+      }
+
+      .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
+
+    <!--Google map-->
+    <div id="map-container-google-1" class="z-depth-1 map-container mb-5">
+      <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+    </div>
+    <!--Google Maps-->
+
+    <!--Grid row-->
+    <div class="container z-depth-1 my-5 px-0">
+
+      <!--Section: Content-->
+      <section class="my-md-5" style="background-image: url('../static/images/contact.jpg'); background-size: cover; background-position: center center;">
+  
+        <div class="rgba-black-strong rounded p-5">
+  
+          <!-- Section heading -->
+          <h3 class="text-center font-weight-bold text-white mt-3 mb-5">Contact Us</h3>
+  
+         
+            <div class="row">
+              <div class="col-md-6 mb-4">
+  
+                <div class="card">
+                  <div class="card-body px-4">
+                  
+                    <!-- Name -->
+                    <div class="form-group">
+                      <input type="text" id="name" class="form-control" name="name" required>
+                      <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" id="email" class="form-control" name="email" required>
+                      <label for="email">Your Email Address</label>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group">
+                      <textarea id="message" class="form-control" rows="3" name="message" required></textarea>
+                      <label for="message">Your Message</label>
+                    </div>
+  
+                    <!-- Name -->
+                    <!-- <div class="md-form md-outline mt-0">
+                      <input type="text" id="name" class="form-control">
+                      <label for="name">Your Name</label>
+                    </div> -->
+                    <!-- Email -->
+                   
+  
+                  </div>
+                </div>
+  
+              </div>
+              <div class="col-md-5 offset-md-1 mt-md-4 mb-4 white-text">
+  
+                <h5 class="font-weight-bold">Address</h5>
+                <p class="mb-0">1632 Bahnhofstraße</p>
+                <p class="mb-0">Deggendorf, 94469</p>
+                <p class="mb-4 pb-2">Germany</p>
+  
+                <h5 class="font-weight-bold">Phone</h5>
+                <p class="mb-4 pb-2">+ 49 7848 567 89</p>
+  
+                <h5 class="font-weight-bold">Email</h5>
+                <p>info@gmail.com</p>
+  
+              </div>
+            </div>
+  
+          </form>
+  
+        </div>
+  
+      </section>
+      <!--Section: Content-->
+    </div>
+  
+  </section>
+  <!--Section: Content-->
+
+</div>
+
+<hr>
+
+<!--************************* Contact us Form end  *************** -->
+
+
+
+<!--************************* Footer Start *************** -->
+
+<footer class="footersection" id="footerdiv">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 footer-div">
+            <div>
+                <h3>About Corona Virus</h3>
+                <p> Most people who fall sick with COVID-19 will 
+                  experience mild to moderate symptoms and recover without special treatment.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 footer-div align-items-center">
+            <div>
+                <h3>NAVIGATION LINKS</h3>
+                <li><a href="/home/">Home</a></li>
+                <li><a href="/service/">Service</a></li>
+                <li><a href="/health/">Your Health</a></li>
+                <li><a href="/status/">Current Situation</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 col-12 footer-div">
+            <div>
+                <h3>Subscribe for Updates</h3>
+                <p> Get a roundup of the most important and intriguing stories, delivered to your inbox.</p>
+
+                  <div class="container newsletter-main">
+                      <div class="row">
+                        <div class="col-lg-12  col-12">
+                          <form role="form" action="/subscription/" method="post">
+                            <div class="input-group mb-3 form-group">
+                              <input type="text" class="form-control news-input" id="sub-email" name="sub-email" placeholder="Your Email" required> 
+                              <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0 input-group-text">Subscribe</span>
+                              </div>
+                            </div>
+                          </form>
+                          
+                         </div>
+                      </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+              <div class="mt-5 text-center">
+                <p>Copyright @ 2020 All right reserved | MUHAMMAD ALI </p>
+              </div>
+          <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+          </div>
+    </div>
+</footer>
+
+
+
+<!--************************* Footer End *************** -->
+
+
+
+
+<!--*************************JS *************** -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+
+  $('.count').counterUp({
+    delay: 10,
+    time: 3000
+  })
+  
+
+    /* //Get the Button */
+
+mybutton = document.getElementById("myBtn");
+
+//when the user scrolls down 20px from the top of the document, show the button
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+  if (Document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+//when the user click onthe button, scroll to the top of the document
+
+function topFunction()  {
+  document.body.scrollTop = 0; //for safari
+  document.documentElement.scrollTop = 0; // for chrome, firefox, IE and Opera
+}
+
+</script>
+</body>
+</html>
+

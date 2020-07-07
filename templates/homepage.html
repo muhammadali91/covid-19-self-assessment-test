@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+  <!---heading---->
+  <title>COVID-19</title>
+  <!---html, css, bootstrap, JS---->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -conecting URL-- -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet"><!---text URL---->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<!---Body Start---->
+
+<body>
+  <!---heading---->
+  <div class="header" id="topheader">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <div class="container" text-uppercase p-2">
+
+        <a class="navbar-brand font-weight-bold text-white" href="#">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-uppercase text-white ">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/service/">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/health/">Your health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/status">Current Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact1/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!---heading---->
+
+    <section class="header-section">
+      <div class="center-div">
+        <h1 class="font-weight-bold">Self Check-in</h1>
+        <p>We give you update and save your time.</p>
+        <div class="header-buttons">
+          <a href="/index/">Test Yourself</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!---close nav bar---->
+
+  <!--************************* header parts end *************** -->
+  <!--************************* counter Start *************** -->
+  <hr>
+  
+  <section class="project-work">
+    <div class="container headings text-center">
+
+      <h1>
+        <p class="text-center font-weight-bold text-uppercase">Germany Corona Update</p>
+      </h1>
+    </div>
+
+    <div class="projecr-work1">
+      <div class="container d-flex justify-content-around align-items-center font-weight-bold text-uppercase"
+        id="counter-Up">
+        <div>
+          <h1 class="count">174000</h1>
+          <p>Confirmed</p>
+          <div class="new-value text-secondary">+900</div>
+        </div>
+
+        <div>
+          <h1 class="count">14600</h1>
+          <p>Recovered</p>
+          <div class="new-value text-info ">+1200</div>
+        </div>
+
+        <div>
+          <h1 class="count">7859</h1>
+          <p>Total Dead</p>
+          <div class="new-value text-success">+531</div>
+        </div>
+
+        <div>
+          <h1 class="count">4310000 </h1>
+          <p>Whole World</p>
+          <div class="new-value text-danger">+3541</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!--************************* counter end *************** -->
+  <hr>
+  <!--************************* project start *************** -->
+ 
+
+  <!--************************* MId  center images with infor Start  *************** -->
+
+  <div class="container py-5 my-5">
+    <section class="p-md-3 mx-md-5">
+      <div class="row mb-5 d-flex align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header white">
+              <h4 class="font-weight-bold mb-0">Know how it spreads</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Between people who are in close contact with one another (within about 6 feet).
+                Through respiratory droplets produced when an infected person coughs, sneezes or talks.
+                These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the
+                lungs.
+                Some recent studies have suggested that COVID-19 may be spread by people who are not showing symptoms.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="view overlay rounded z-depth-1">
+            <img src="../static/images/F1.jpg" class="img-fluid" alt="Sample project image" />
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5 d-flex align-items-center justify-content-end">
+        <div class="col-md-6 col-lg-4">
+          <div class="view overlay rounded z-depth-1">
+            <img src="../static/images/f2.jpg" class="img-fluid" alt="Sample project image" />
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header white">
+              <h4 class="font-weight-bold mb-0">Wash your hands often</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Wash your hands often with soap and water for at least 20 seconds especially after you have been in a
+                public place, or after blowing your nose, coughing, or sneezing.
+                If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol.
+                Cover all surfaces of your hands and rub them together until they feel dry.
+                Avoid touching your eyes, nose, and mouth with unwashed hands.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header white">
+              <h4 class="font-weight-bold mb-0">Cover your Mouth and Nose</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                You could spread COVID-19 to others even if you do not feel sick.
+                Everyone should wear a cloth face cover when they have to go out in public, for example to the grocery
+                store or to pick up other necessities.
+                Cloth face coverings should not be placed on young children under age 2, anyone who has trouble
+                breathing, or is unconscious, incapacitated or otherwise unable to remove the mask without assistance.
+                The cloth face cover is meant to protect other people in case you are infected.
+                Do NOT use a facemask meant for a healthcare worker.
+                Continue to keep about 6 feet between yourself and others. The cloth face cover is not a substitute for
+                social distancing.
+              </p>
+              <!-- <a class="blue-text font-weight-bold" href="#">Learn more</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="view overlay rounded z-depth-1">
+            <img src="../static/images/f3.png" class="img-fluid" alt="Sample project image" />
+            <a href="#">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--************************* MId  center images with infor end  *************** -->
+
+  <!--************************* MId CEnter financial  Information start*************** -->
+  <hr>
+  <div class="container my-5 py-5 z-depth-1">
+    <style>
+      body {
+        background-image: url("");
+      }
+    </style>
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text ">
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+          <h3 class="font-weight-bold">COVID-19 Financial Support</h3>
+
+          <p class="text-muted">Provides € 1000 Per month to workers who lose income due to COVID19, including contractors
+            and self-employed people.
+            (Note: Previous description implied only those who do not qualify for
+            EI are eligible for CERB. However, CERB may actually take the place
+            of EI for new applicants when available. In the meantime, those who
+            qualify for EI should continue to submit for EI, as it is a benefit that
+            lasts up to 45 weeks and can continue after the CERB benefit ends </p>
+
+          <a class="btn btn-black btn-md ml-0 btn btn-outline-info" href="/service/" role="button">check Now </a>
+      
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="../static/images/Financial.jpg" class="img-fluid" alt="">
+            <a href="#">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+  <!--************************* Contact US form start*************** -->
+  <hr>
+
+  <div class="container z-depth-1 my-5 px-0">
+
+    <!--Section: Content-->
+    <section class="my-md-5" style="background-image: url('../static/images/contact.jpg'); background-size: cover; background-position: center center;">
+
+      <div class="rgba-black-strong rounded p-5">
+
+        <!-- Section heading -->
+        <h3 class="text-center font-weight-bold text-white mt-3 mb-5">Contact Us</h3>
+
+        <form class="mx-md-5" role="form" action="/contact/" method="post"> 
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+
+              <div class="card">
+                <div class="card-body px-4">
+                
+                  <!-- Name -->
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control" name="name" required>
+                    <label for="name">Your Name</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="email" class="form-control" name="email" required>
+                    <label for="email">Your Email Address</label>
+                  </div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <textarea id="message" class="form-control" rows="3" name="message" required></textarea>
+                    <label for="message">Your Message</label>
+                  </div>
+
+                  <!-- Name -->
+                  <!-- <div class="md-form md-outline mt-0">
+                    <input type="text" id="name" class="form-control">
+                    <label for="name">Your Name</label>
+                  </div> -->
+                  <!-- Email -->
+                    <!-- <div class="md-form md-outline">
+                    <input type="text" id="email" class="form-control">
+                    <label for="email">Your Email Address</label>
+                  </div>
+                  <-- Message -->
+                  <!-- <div class="md-form md-outline">
+                    <textarea id="message" class="md-textarea form-control" rows="3"></textarea>
+                    <label for="message">Your Message</label>
+                  </div> --> 
+
+                  <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0">Submit inquiry</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-5 offset-md-1 mt-md-4 mb-4 white-text">
+
+              <h5 class="font-weight-bold">Address</h5>
+              <p class="mb-0">1632 Bahnhofstraße</p>
+              <p class="mb-0">Deggendorf, 94469</p>
+              <p class="mb-4 pb-2">Germany</p>
+
+              <h5 class="font-weight-bold">Phone</h5>
+              <p class="mb-4 pb-2">+ 49 7848 567 89</p>
+
+              <h5 class="font-weight-bold">Email</h5>
+              <p>info@gmail.com</p>
+
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+  <!--************************* Contact US form END*************** -->
+
+
+  <!--************************* Footer Start *************** -->
+
+  <footer class="footersection" id="footerdiv">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div>
+            <h3>About Corona Virus</h3>
+            <p> Most people who fall sick with COVID-19 will
+              experience mild to moderate symptoms and recover without special treatment.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 footer-div align-items-center">
+          <div>
+            <h3>NAVIGATION LINKS</h3>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/service/">Service</a></li>
+            <li><a href="/health/">Your Health</a></li>
+            <li><a href="/status/">Current Situation</a></li>
+            <li><a href="/contact1/">Contact</a></li>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12 footer-div">
+          <div>
+            <h3>Subscribe for Updates</h3>
+            <p> Get a roundup of the most important and intriguing stories, delivered to your inbox.</p>
+
+            <div class="container newsletter-main">
+              <div class="row">
+                <div class="col-lg-12  col-12">
+                  <form role="form" action="/subscription/" method="post">
+                    <div class="input-group mb-3 form-group">
+                      <input type="text" class="form-control news-input" id="sub-email" name="sub-email" placeholder="Your Email" required> 
+                      <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0 input-group-text">Subscribe</span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <p>Copyright @ 2020 All right reserved | MUHAMMAD ALI </p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--************************* Footer End *************** -->
+
+
+
+
+  <!--*************************JS *************** -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="/static/js/test.js"></script>
+
+  <script>
+
+    $('.count').counterUp({
+      delay: 10,
+      time: 3000
+    })
+
+
+    /* //Get the Button */
+
+    mybutton = document.getElementById("myBtn");
+
+    //when the user scrolls down 20px from the top of the document, show the button
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (Document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+
+    //when the user click onthe button, scroll to the top of the document
+
+    function topFunction() {
+      document.body.scrollTop = 0; //for safari
+      document.documentElement.scrollTop = 0; // for chrome, firefox, IE and Opera
+    }
+
+  </script>
+</body>
+
+</html>

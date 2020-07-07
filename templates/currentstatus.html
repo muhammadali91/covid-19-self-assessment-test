@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---html, css, bootstrap, JS---->
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/static/styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="static/styles/style.css">
+  <!--conecting URL-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <!---text URL---->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>COVID-19 STATUTS</title>
+</head>
+<!---Body Start---->
+
+<body>
+  <!---Menu Bar Start---->
+  <header>
+    <div class="headers" id="topheaderm">
+      <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container" text-uppercase p-2">
+          <a class="navbar-brand font-weight-bold text-white" href="#">COVID-19</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto text-uppercase text-white ">
+              <li class="nav-item active">
+                <a class="nav-link" href="/home/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/service/">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/health/">Your health</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/status">Current Status</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact/">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <!---Menu Bar End---->
+
+  <!---Body Start---->
+  <main>
+    <div class="stats">
+      <div class="latest-report">
+        <div class="country">
+          <div class="name">Loading...</div>
+          <div class="change-country">change</div>
+          <div class="search-country hide">
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search Country...">
+              <img class="close" src="/static/images/Status/close.svg" alt="">
+            </div>
+            <div class="country-list">
+            </div>
+          </div>
+        </div>
+        <div class="total-cases">
+          <div class="title">Total Cases</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="recovered">
+          <div class="title">Recovered</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+        <div class="deaths">
+          <div class="title">Deaths</div>
+          <div class="value">0</div>
+          <div class="new-value">+0</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="chart">
+        <canvas id="axes_line_chart"></canvas>
+      </div>
+    </div>
+  </main>
+  <!--************************* Global Para Start mid image *************** -->
+  <hr>
+
+  <div class="container z-depth-1 py-5 my-5">
+    <section class="mx-md-5 text-center text-lg-left">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12">
+          <div class="row p-5">
+            <div class="col-lg-8 d-flex flex-column justify-content-between">
+              <p class="font-weight-bold lead mb-2"><strong>Corona latest News ⭕</strong></p>
+              <p class="text-muted mb-4">
+
+
+                <!-- start sw-rss-feed code -->
+                <script type="text/javascript">
+  
+                  rssfeed_url = new Array();
+                  rssfeed_url[0] = "http://munichnow.com/feed/"; rssfeed_url[1] = "https://ec.europa.eu/information_society/newsroom/cf/generaterss.cfm?tpa_id=18474&sub=1&pr=all";
+                  rssfeed_frame_width = "500";
+                  rssfeed_frame_height = "500";
+                  rssfeed_scroll = "on";
+                  rssfeed_scroll_step = "6";
+                  rssfeed_scroll_bar = "off";
+                  rssfeed_target = "_blank";
+                  rssfeed_font_size = "12";
+                  rssfeed_font_face = "";
+                  rssfeed_border = "on";
+                  rssfeed_css_url = "https://feed.surfing-waves.com/css/style6.css";
+                  rssfeed_title = "on";
+                  rssfeed_title_name = "";
+                  rssfeed_title_bgcolor = "#3366ff";
+                  rssfeed_title_color = "#fff";
+                  rssfeed_title_bgimage = "";
+                  rssfeed_footer = "off";
+                  rssfeed_footer_name = "rss feed";
+                  rssfeed_footer_bgcolor = "#fff";
+                  rssfeed_footer_color = "#333";
+                  rssfeed_footer_bgimage = "";
+                  rssfeed_item_title_length = "50";
+                  rssfeed_item_title_color = "#666";
+                  rssfeed_item_bgcolor = "#fff";
+                  rssfeed_item_bgimage = "";
+                  rssfeed_item_border_bottom = "on";
+                  rssfeed_item_source_icon = "off";
+                  rssfeed_item_date = "off";
+                  rssfeed_item_description = "on";
+                  rssfeed_item_description_length = "120";
+                  rssfeed_item_description_color = "#666";
+                  rssfeed_item_description_link_color = "#333";
+                  rssfeed_item_description_tag = "off";
+                  rssfeed_no_items = "0";
+                  rssfeed_cache = "6895099e39ce1f67879f238212759d85";
+
+                </script>
+                <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+              <div style="color:#ccc;font-size:10px; text-align:right; width:500px;">powered by <a
+                  href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a>
+              </div>
+              <!-- end sw-rss-feed code -->
+              </p>
+              <div>
+
+              </div>
+            </div>
+            <div class="col-lg-4 d-flex mb-2 align-items-center">
+              <div class="avatar mx-4 w-100 white d-flex justify-content-center align-items-center">
+                <img src="/static/images/Status/global.jpg" class="rounded-circle img-fluid z-depth-1" alt="a">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--*************************  GlobaL Para Start mid end *************** -->
+
+  <!--*************************  two Div mid start *************** -->
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <div class="row no-gutters position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img class="w-100" src="/static/images/Status/who.jpg" alt="image">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0 font-weight-bold">Wolrd Helath Organization </h5>
+          <br>
+          <p id="correct">
+            the actual total death toll from COVID-19 is likely to be higher than the number of confirmed deaths – this
+            is due to limited testing and problems in the attribution of the cause of death; the difference between
+            reported confirmed deaths and total deaths varies by country
+            how COVID-19 deaths are recorded may differ between countries (e.g. some countries may only count hospital
+            deaths, whilst others have started to include deaths in homes)
+          </p>
+          <a href="https://covid19.who.int/?gclid=CjwKCAjwq832BRA5EiwACvCWscqM_4x12kDL5k6Atr3mVrVOn4YdDWuiaoo3zsoWOZCEwrwEozRdoRoC4OgQAvD_BwE"
+            target="_blank" class="stretched-link">More Update</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--*************************  seconde div mid *************** -->
+
+    <div class="col-md-6">
+      <!--Accordion wrapper-->
+      <div class="accordion md-accordion accordion-4" id="accordionEx2" role="tablist" aria-multiselectable="true">
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header z-depth-1 teal lighten-4" role="tab" id="heading10">
+            <a data-toggle="collapse" data-parent="#accordionEx2" href="#collapse10" aria-expanded="true"
+              aria-controls="collapse10">
+              <h4 class="mb-0 black-text text-center font-weight-bold text-uppercase">
+                Risk to Germans
+              </h4>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse10" class="collapse show" role="tabpanel" aria-labelledby="heading10"
+            data-parent="#accordionEx2">
+            <div class="card-body rgba-teal-strong white-text">
+              <p>
+                COVID-19 is a serious health threat, and the situation is evolving daily. The risk will vary between and
+                within communities,
+                but given the increasing number of cases in German, the risk to Germans is considered high.
+              </p>
+              <p>
+                This does not mean that all Germans will get the disease. It means that there is already a significant
+                impact on our health care system. If we do not flatten the epidemic curve now, the increase of COVID-19
+                cases could impact health care resources available to Germans.
+                We continue to reassess the public health risk based on the best available evidence as the situation
+                evolves.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header z-depth-1 teal lighten-3" role="tab" id="heading11">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse11"
+              aria-expanded="false" aria-controls="collapse11">
+              <h4 class="mb-0 black-text text-center font-weight-bold text-uppercase">
+                Who is most at risk
+              </h4>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordionEx2">
+            <div class="card-body rgba-teal-strong white-text">
+              <p>While COVID-19 can make anyone sick, some Germans with specific health circumstances are at an
+                increased risk of more severe outcomes, including individuals:
+                <br>
+                •&ensp; aged 65 and over
+                <br>
+                • &ensp; with compromised immune systems
+                <br>
+                • &ensp; with underlying medical conditions
+                <br>
+                • &ensp; In addition, social and economic circumstances may also be a factor in identifying someone who
+                is vulnerable to COVID-19. This includes anyone who has:</p>
+
+              <p> economic barriers:
+                <br>
+                •&ensp; difficulty accessing transportation
+                <br>
+                •&ensp;difficulty accessing medical care or health advice
+                <br>
+                • &ensp;unstable employment or inflexible working conditions
+                <br>
+                •&ensp;insecure, inadequate, or nonexistent housing conditions
+                <br>
+                • &ensp; ongoing specialized medical care or needs specific medical supplies
+                <br>
+                •&ensp;social or geographic isolation, like in remote and isolated communities
+                <br>
+                • &ensp;difficulty reading, speaking, understanding or communicating
+                <br>
+                •&ensp;ongoing supervision needs or support for maintaining independence
+                <br>
+                •&ensp; difficulty doing preventive activities, like frequent hand washing and covering coughs and
+                sneezes</p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header z-depth-1 teal lighten-2" role="tab" id="heading12">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse12"
+              aria-expanded="false" aria-controls="collapse12">
+              <h4 class="mb-0 black-text text-center font-weight-bold text-uppercase">
+                How Germans is monitoring COVID-19
+              </h4>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordionEx2">
+            <div class="card-body rgba-teal-strong white-text">
+              <p>The health and safety of all Germans is our top priority.
+                The Public Health Agency of German is working with provinces, territories and international partners,
+                including the World Health Organization, to actively monitor the situation. Global efforts are focused
+                on containment of the outbreak and the prevention of further spread.
+              </p>
+
+              <p>German's Chief Public Health Officer of German is in close contact with provincial and territorial
+                Chief Medical Officers of Health to ensure that any cases of COVID-19 occurring in German continue to be
+                rapidly identified and managed in order to protect the health of Germans.
+
+              </p>
+              <p>
+                German's National Microbiology Laboratory is performing diagnostic testing for the virus that causes
+                COVID-19. The laboratory is working in close collaboration with provincial and territorial public health
+                laboratories, which are now able to test for COVID-19. A summary of people tested in German is available
+                and updated each week day.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header z-depth-1 teal lighten-1" role="tab" id="heading13">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse13"
+              aria-expanded="true" aria-controls="collapse13">
+              <h4 class="mb-0 black-text text-center font-weight-bold text-uppercase">
+                History
+              </h4>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordionEx2">
+            <div class="card-body rgba-teal-strong white-text">
+              <p>
+                •&ensp; On April 28, Germans surpasses 50,000 confirmed cases of COVID-19
+                <br>
+                •&ensp; On April 23, Germans announces more than $1 billion in support of a national medical research
+                strategy to fight COVID-19.
+                <br>
+                •&ensp; On April 23, Germans surpasses 2,000 confirmed deaths from COVID-19
+                <br>
+                • &ensp;On April 15, Germans surpasses 1,000 confirmed deaths from COVID-19
+                <br>
+                •&ensp; On April 15, Germans launches a new portal, Wellness Together Germans, dedicated to mental
+                wellness
+                <br>
+                •&ensp; On April 15, expansion of the COVID-19 Emergency Response Act, to help essential workers
+                <br>
+                •&ensp; On April 11, expansion of the COVID-19 Emergency Response Act, to help businesses keep Germans
+                in their jobs.
+                <br>
+                •&ensp; On April 9, Germans surpasses 20,000 confirmed cases of COVID-19
+                <br>
+                • &ensp;On April 3, Germans announces an investment of $100 million to improve access to food for
+                Germans facing social, economic, and health impacts of the COVID-19 pandemic.
+                <br>
+                •&ensp; On April 2, worldwide COVID-19 cases reach 1 million.
+                <br>
+                • &ensp;On April 2, Germans launches the Germans COVID-19 app on iOS and Android to provide Germans with
+                the latest information on COVID-19 and a way to check their symptoms.
+                <br>
+                • &ensp; On April 2, Germans surpasses 10,000 confirmed cases of COVID-19.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+
+        <!-- Accordion card -->
+        <div class="card">
+
+          <!-- Card header -->
+          <div class="card-header z-depth-1 teal" role="tab" id="heading14">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse14"
+              aria-expanded="false" aria-controls="collapse14">
+              <h4 class="mb-0 black-text text-center font-weight-bold text-uppercase">
+                Travellers without symptoms
+              </h4>
+            </a>
+          </div>
+
+          <!-- Card body -->
+          <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordionEx2">
+            <div class="card-body rgba-teal-strong white-text">
+              <h4>Mandatory Quarantine</h4>
+              <br>
+
+              <p>If you have recently returned to Canada and you have no symptoms, you must quarantine (self-isolate)
+                for 14 days.
+                This is mandatory. You are at risk of developing symptoms and infecting others.</p>
+              <p> • &ensp; You must quarantine (self-isolate) in a place where you will have no contact with vulnerable
+                people, such as:
+                <br>
+                ○ &ensp; people 65 years or older, or
+                <br>
+                ○ &ensp; people with underlying medical conditions
+                <br>
+                • &ensp; You will need to confirm you have a suitable place to isolate where you will have access to
+                basic necessities, such as food and medication.
+                <br>
+                • &ensp; You must wear a non-medical mask or face covering while traveling to the place you will
+                quarantine (self-isolate).
+                <br>
+                If you do not have an adequate place to quarantine (self-isolate), the Chief Public Health Officer of
+                Canada will designate a facility where you must remain for 14 days.</p>
+
+              <p>
+
+              </p>
+              <p>
+                In addition to the above, mandatory quarantine (self-isolate) means you must:
+                <br>
+                • &ensp; go directly to your place of quarantine, without stopping anywhere, and stay there for 14 days
+                <br>
+                • &ensp; do not go to school, work or other public areas and community settings.
+                <br>
+                • &ensp; gomonitor your health for symptoms of COVID-19.
+                <br>
+                • &ensp; go arrange to have someone pick up essentials like groceries or medication for you.
+                <br>
+                • &ensp; godo not have visitors.
+                <br>
+                • &ensp; gostay in a private place like your yard or balcony if you go outside for fresh air.
+                <br>
+                • &ensp; go keep a distance of at least 2 arms lengths (approximately 2 metres) from others.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion card -->
+      </div>
+      <!--/.Accordion wrapper-->
+
+    </div>
+  </div>
+  <!--*************************  two Div mid end *************** -->
+
+
+  <!--************************* Footer Start *************** -->
+
+  <footer class="footersection" id="footerdiv">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 footer-div">
+          <div>
+            <h3>About Corona Virus</h3>
+            <p> Most people who fall sick with COVID-19 will
+              experience mild to moderate symptoms and recover without special treatment.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 footer-div align-items-center">
+          <div>
+            <h3>NAVIGATION LINKS</h3>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/service/">Service</a></li>
+            <li><a href="/health/">Your Health</a></li>
+            <li><a href="/status/">Current Situation</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12 footer-div">
+          <div>
+            <h3>Subscribe for Updates</h3>
+            <p> Get a roundup of the most important and intriguing stories, delivered to your inbox.</p>
+
+            <div class="container newsletter-main">
+              <div class="row">
+                <div class="col-lg-12  col-12">
+                  <form role="form" action="/subscription/" method="post">
+                    <div class="input-group mb-3 form-group">
+                      <input type="text" class="form-control news-input" id="sub-email" name="sub-email" placeholder="Your Email" required> 
+                      <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0 input-group-text">Subscribe</span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <p>Copyright @ 2020 All right reserved | MUHAMMAD ALI  </p>
+      </div>
+      <div class="scrolltop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--************************* Footer End *************** -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+    integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+  <script src="/static/js/countries.js"></script>
+  <script src="/static/js/app.js"></script>
+  <script src="/static/js/test.js"></script>
+
+  <!--*************************JS *************** -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="/static/js/test.js"></script>
+
+  <!--*************************scroll *************** -->
+  <script>
+
+    $('.count').counterUp({
+      delay: 10,
+      time: 3000
+    })
+
+
+    /* //Get the Button */
+
+    mybutton = document.getElementById("myBtn");
+
+    //when the user scrolls down 20px from the top of the document, show the button
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (Document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+
+    //when the user click onthe button, scroll to the top of the document
+
+    function topFunction() {
+      document.body.scrollTop = 0; //for safari
+      document.documentElement.scrollTop = 0; // for chrome, firefox, IE and Opera
+    }
+
+  </script>
+</body>
+
+</html>
